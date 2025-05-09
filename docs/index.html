@@ -1,15 +1,86 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>Seoul Damda 앱 다운로드</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seoul Damda 앱 설치</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #eaf3ff, #fef6ff);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 32px;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .download-btn {
+      display: inline-block;
+      background: #5c6bc0;
+      color: white;
+      font-weight: bold;
+      padding: 12px 24px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .download-btn:hover {
+      background: #3f51b5;
+    }
+
+    .note {
+      margin-top: 16px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .badge {
+      background: #a5d6a7;
+      color: #2e7d32;
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-size: 13px;
+      display: inline-block;
+      margin-bottom: 16px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Seoul Damda 앱 다운로드</h1>
-  <p>아래 버튼을 눌러 APK 파일을 설치하세요.</p>
-  <a href="https://drive.google.com/uc?export=download&id=1gK1dR5vCpwVF0lZ9nXS24rBxZp2jH8Kx" target="_blank">
-    앱 설치하기 (APK)
-  </a>
-  <p>※ 설치 차단 시 '알 수 없는 앱 설치 허용'을 먼저 설정해 주세요.</p>
+  <div class="container">
+    <div class="badge">Android 전용</div>
+    <h1>Seoul Damda 앱 다운로드</h1>
+    <p>서울 여행의 모든 것을 담은 앱<br>아래 버튼을 눌러 설치하세요.</p>
+    <a class="download-btn"
+       href="https://drive.google.com/uc?export=download&id=1gK1dR5vCpwVF0lZ9nXS24rBxZp2jH8Kx"
+       target="_blank">
+      APK 설치하기
+    </a>
+    <p class="note">※ 설치 차단 시, 설정 > 보안 > 알 수 없는 앱 허용을 켜주세요.</p>
+  </div>
 </body>
 </html>
